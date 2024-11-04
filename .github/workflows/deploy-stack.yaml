@@ -21,8 +21,8 @@ jobs:
   cicd:
     uses: subhamay-bhattacharyya/9999-reusable-wf/.github/workflows/tf-cicd-create.yaml@main
     with:
-      deploy-reviewer-test: 142895397
-      deploy-reviewer-prod: 144537759
-      pr-approver: bsubhamay-approver
+      deploy-reviewer-test: 142895397   # This is the user id of the reviewer - Subhamay
+      deploy-reviewer-prod: 150314255   # This is the user id of the reviewer - Thomas
+      pr-approver: 144537759            # This is the user id of the reviewer - Samsung
     secrets:
       git-token: ${{ secrets.GIT_TOKEN }}
